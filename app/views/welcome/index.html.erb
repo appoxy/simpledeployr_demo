@@ -1,6 +1,10 @@
 <h1>Welcome to the SimpleDeployr Demo App!</h1>
 
 <% if defined? INSTANCE_INFO %>
+
+inspect    <%= INSTANCE_INFO.inspect %>
+    <br/>
+    
     <p>I am instance <b><%= INSTANCE_INFO["instance_id"] %></b>.</p>
 
     <p>I was launched at <b><%= INSTANCE_INFO["launch_date"] %></b>.</p>
