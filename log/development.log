@@ -1,0 +1,58 @@
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-01-20 21:17:38) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::INSTANCE_INFO) on line #3 of app/views/welcome/index.html.erb:
+1: <h1>Welcome to the SimpleDeployr Demo App!</h1>
+2: 
+3: <% if INSTANCE_INFO %>
+4:     <p>I am instance <b><%= INSTANCE_INFO["instance_id"] %></b>.</p>
+5: 
+6:     <p>I was launched at <b><%= INSTANCE_INFO["launch_date"] %></b>.</p>
+
+    app/views/welcome/index.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-01-20 21:17:54) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::INSTANCE_INFO) on line #3 of app/views/welcome/index.html.erb:
+1: <h1>Welcome to the SimpleDeployr Demo App!</h1>
+2: 
+3: <% if INSTANCE_INFO %>
+4:     <p>I am instance <b><%= INSTANCE_INFO["instance_id"] %></b>.</p>
+5: 
+6:     <p>I was launched at <b><%= INSTANCE_INFO["launch_date"] %></b>.</p>
+
+    app/views/welcome/index.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-01-20 21:17:56) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 8ms (View: 7 | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-01-20 21:17:57) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 2ms (View: 1 | 200 OK [http://localhost/]
