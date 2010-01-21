@@ -1,14 +1,10 @@
-# Be sure to restart your server when you modify this file
+# Bootstrap the Rails environment, frameworks, and default configuration
+require File.join(File.dirname(__FILE__), 'boot')
 
-# Specifies gem version of Rails to use when vendor/rails is not present
-#RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 INSTANCE_INFO = YAML.load_file(File.join(Rails.root, "config", "instance_info.yml")) if File.exists?(File.join(Rails.root, "config", "instance_info.yml"))
 DEPLOY_INFO = YAML.load_file(File.join(Rails.root, "config", "deploy_info.yml"))  if File.exists?(File.join(Rails.root, "config", "deploy_info.yml"))
 AWS_CONFIG = YAML.load_file(File.join(Rails.root, "config", "aws_config.yml"))  if File.exists?(File.join(Rails.root, "config", "aws_config.yml"))
-
-# Bootstrap the Rails environment, frameworks, and default configuration
-require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
