@@ -1,0 +1,27 @@
+<div style="background-image:url('/images/happy_coding2.jpg'); background-repeat:no-repeat; background-position: center top; width:100%; height:500px;">
+
+    <div style="width:700px; margin:0 auto; text-align:center;">
+
+        <h2>Welcome to the SimpleDeployer Demo App!</h2>
+
+    </div>
+
+</div>
+<div style="width:700px; margin:0 auto; text-align:center;">
+
+    <% if defined? INSTANCE_INFO %>
+
+        <div style="">
+
+            <p>I am instance <b><%= INSTANCE_INFO["instance_id"] %></b>.</p>
+
+            <p>I was launched at <b><%= INSTANCE_INFO["launch_date"] %></b>.</p>
+
+            <p>My code revision is <b><%= DEPLOY_INFO["revision"] %></b>.</p>
+
+            <p>My arbitrary version is <b>1.0.1</b>.</p>
+
+        </div>
+    <% end %>
+
+</div>

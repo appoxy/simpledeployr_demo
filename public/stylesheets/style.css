@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: Tahoma, "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-size: 12px;
+    color: #333; /*background: #fff url(http://www.plasternetworks.com/images/body-bg.png) repeat-x left top};*/
+    background-color:#F0ECED;
+    background-image:url('/images/happy_coding2_slice.jpg'); background-repeat:repeat-x;
+
+}
+
+img {
+    border: none;
+}
+
+a img {
+    border: none;
+}
+
